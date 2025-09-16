@@ -1,16 +1,12 @@
 /*Shree Khambekar
  9/16/2025*/
 
-/* One section does not match the example 
-    images-- see COMMENT on my Canvas submission
-    which explains why */
-
 body {
     background-color: #F5EFE6;
     color: #4B3832;
 }
 
-h1, h2, h3, footer {
+header, footer {
     background-color: #8B5E3B;
     color: #FFFFFF;
 }
@@ -19,6 +15,6 @@ nav {
     background-color: #D4A373;
 }
 
-main{
+main {
     background-color: #FFFFFF;
 }
