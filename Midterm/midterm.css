@@ -36,7 +36,7 @@
 }
 
 @font-face{
-    font-family: 'Audiowide'; /*BACKUP FONTS*/
+    font-family: 'Audiowide';
     src: url('Custom_Fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
 }
 
@@ -48,7 +48,7 @@ header {
 }
 
 body {
-    background-image: url('pastel-sky-clouds.jpg');
+    background-image: url('Images/pastel-sky-clouds.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,7 +132,7 @@ button:hover {background-color: #FF2CCB;}
 
 /*NIGHT MODE CLASSES*/
 body.dark {
-    background-image: url('starry-night-sky.jpg');
+    background-image: url('Images/starry-night-sky.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
