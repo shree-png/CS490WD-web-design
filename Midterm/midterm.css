@@ -21,12 +21,12 @@
 /*DAY MODE CUSTOM FONTS*/
 @font-face {
     font-family: 'IndieFlower';
-    src: url('Custom_Fonts/Indie_Flower/IndieFlower-Regular.woff2') format('woff2');
+    src: url('Custom_Fonts/Indie_Flower/IndieFlower-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ArchitectsDaughter';
-    src: url('Custom_Fonts/Architects_Daugher/ArchitectsDaughter-Regular.woff2') format('woff2');
+    src: url('Custom_Fonts/Architects_Daugher/ArchitectsDaughter-Regular.ttf') format('truetype');
 }
 
 /*NIGHT MODE CUSTOM FONTS*/
