@@ -1,0 +1,277 @@
+/* Shree Khambekar
+10/27/2025 */
+
+/*media query: makes the grid template only one column for mobile screens (600px)*/
+@media (max-width: 600px) {
+    /*ul.cards { Needs higher specificity to override normal .cards
+        grid-template-columns: 1fr; 
+    } */
+    /* grid auto seems to already handle shifting screen sizes by default,
+        so I commented grid adjustement out of the media query since it was
+        redundant.*/
+
+    button {margin-bottom: 30px;}
+
+    .container {text-align: center;}
+
+    footer {text-align: center;}
+}
+
+
+/*DAY MODE CUSTOM FONTS*/
+@font-face {
+    font-family: 'IndieFlower';
+    src: url('Indie_Flower/IndieFlower-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ArchitectsDaughter';
+    src: url('Architects_Daughter/ArchitectsDaughter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MsMadi';
+    src: url('Ms_Madi/MsMadi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Neonderthaw';
+    src: url('Neonderthaw/Neonderthaw-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumPenScript';
+    src: url('Nanum_Pen_Script/NanumPenScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+}
+
+/*NIGHT MODE CUSTOM FONTS*/
+@font-face {
+    font-family: 'Michroma';
+    src: url('Michroma/Michroma-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Audiowide'; /*BACKUP FONTS*/
+    src: url('Audiowide-Regular.ttf') format('truetype');
+}
+
+/*CSS on Elements*/
+header {
+    font-family: ArchitectsDaughter, cursive;
+    font-size: 25px;
+    color: #FB5ECF;
+}
+
+body {
+    background-image: url('pastel-sky-clouds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: #4440B3;
+    font-family: MsMadi, cursive;
+    /*font-size: 42px;*/
+    font-size: 50px;
+}
+
+nav {padding: 20px;}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    background: #F4E8F2;
+    font-weight: bold;
+    font-family: ArchitectsDaughter, cursive;
+    /*font-size: 30px;*/
+}
+
+.cards {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cards li {
+    background:#F4E8F2;
+    text-align: center;
+    border: 2px dashed #4E165F;
+    padding: 5px;
+}
+
+.boxheader {
+    text-align: center;
+    color: #4440B3;
+    font-family: cursive;
+    font-size: 47px;
+}
+
+.box {
+    width: 60%;
+    margin: 0 auto;
+    background: #F4E8F2;
+    text-align: left;
+    border: 2px dashed #4E165F;
+    padding: 20px;
+    font-family: ArchitectsDaughter, cursive;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.pic {
+    float: left; /*to make the text wrap around the image; I looked this up*/
+    width: 185px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.cards li a { /*for programs page*/
+    text-decoration: none;
+    color: #612CE1;
+    font-family: ArchitectsDaughter, cursive;
+    font-size: 28px;
+}
+
+.cards li p {
+    font-family: ArchitectsDaughter, cursive;
+    font-weight: 550;
+    color: #381635;
+    font-size: 18px;
+}
+
+.cards li h3 { /*for education page*/
+    text-decoration: none;
+    color: #612CE1;
+    font-family: ArchitectsDaughter, cursive;
+    font-size: 25px;
+}
+
+.contact {text-align: center;}
+
+.contact h1 {color: #4440B3;}
+
+.contact p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #614CA2;
+    font-family: IndieFlower, cursive;
+}
+
+.contact p a {color: #614CA2;}
+
+button {
+    background-color: #F4E8F2;
+    border-radius: 8px;
+    padding: 5px 10px;
+    border: 2px solid #612CE1;
+    font-family: cursive;
+    color: #612CE1;
+    cursor: pointer; /*looked this up*/
+}
+
+.eddescript {
+    font-family: cursive;
+    /*color: #FF2CCB;*/
+    text-align: center;
+    font-size: 19px;
+}
+
+.resume-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* I looked up embed syntax and CSS*/
+.resume-viewer {
+    width: 55%;
+    height: 600px;
+    display: block;
+}
+
+/* Hover pseudoclasses for links (projects and my email)
+    and buttons (night mode toggle + scroll to top) */
+.cards li a:hover {color: #FF2CCB;}
+
+.contact a:hover {color: #FF2CCB;}
+
+button:hover {background-color: #FF2CCB;}
+
+/*Aligning the buttons using their container classes*/
+.container {text-align: right;}
+
+.container2 {text-align: center;}
+
+/*not displayed by default*/
+#scrollTopBtn {display: none;}
+
+
+/*NIGHT MODE CLASSES*/
+body.dark {
+    background-image: url('starry-night-sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.dark header {
+    color: #F7D9FF;
+    font-family: Michroma, 'Times New Roman';
+    font-size: 20px;
+}
+
+body.dark h1 {
+    color: #CC6CE7;
+    font-family: Michroma, 'Times New Roman';
+    font-size: 38px;
+}
+
+body.dark .cards li { /*looked this syntax up so the button would toggle all elements
+and I wouldnt have to toggle them all separately.*/
+    background-color: #612CE1;
+    border: 2px solid white;
+}
+
+body.dark .cards li a {
+    color: white;
+    font-family: Audiowide, 'Times New Roman';
+}
+
+body.dark .cards li p {
+    color: white;
+    font-family: Michroma, 'Times New Roman';
+    font-size: 14px;
+}
+
+/* For some reason, just body.dark .contact alone didn't work. Hence why I defined 
+ each .contact element separately, despite them all being the same color. */
+body.dark .contact h1 {color: #F7D9FF;}
+
+body.dark .contact p {
+    color: #F7D9FF;
+    font-family: Michroma, 'Times New Roman';
+    font-size: 14px;
+}
+
+body.dark .contact p a {color: #F7D9FF;}
+
+body.dark footer {color: #CC6CE7;}
+
+/* Hover pseudoclasses for links (projects and my email)
+    and buttons (night mode toggle + scroll to top) */
+body.dark .cards li a:hover {color: black;}
+
+body.dark .contact a:hover {color: #CC6CE7;}
+
+body.dark button:hover {background-color: #CC6CE7;}
