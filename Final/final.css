@@ -135,8 +135,10 @@ nav {padding: 20px;}
 }
 
 /*specific to the about me/bio/home page*/
-/*for small screens, since my picture is relatively smaller*/
-@media (max-width: 500px) {
+/*I had to move this media query down here since it wasn't working at the top due to the normal 
+.box class being below and thus taking precedence*/
+/*for small screens, since my picture is relatively small*/
+@media (max-width: 400px) {
     .box {
         width: 185px;
         text-align: center;
