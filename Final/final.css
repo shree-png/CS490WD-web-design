@@ -221,10 +221,11 @@ button {
     display: block;
 }
 
-/*I picked 1200px because that's when the resume viewer starts to cut off.
+/*I picked 1215px because that's when the resume viewer starts to cut off a lot /
+you can't see the whole resume at once (even after scrolling).
 Changed to 100% width so no cutoff happens / the whole resume shows after
 this cutoff point.*/
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
     .resume-viewer {
         width: 100%;
     }
