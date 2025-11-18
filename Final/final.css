@@ -15,6 +15,12 @@
     .container {text-align: center;}
 
     footer {text-align: center;}
+
+    /*specific to the about me/bio/home page*/
+    .box { 
+        width: 185px; /*Same size as photo*/
+        text-align: center;
+    }
 }
 
 
