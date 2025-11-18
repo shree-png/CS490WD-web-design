@@ -94,9 +94,11 @@ nav {padding: 20px;}
     background: #F4E8F2;
     font-weight: bold;
     font-family: ArchitectsDaughter, cursive;
+}
+
+.navbar ul li a {
     color: #FF2CCB;
     text-decoration: none;
-    /*font-size: 30px;*/
 }
 
 .cards {
