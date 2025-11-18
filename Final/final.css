@@ -1,5 +1,5 @@
 /* Shree Khambekar
-10/27/2025 */
+11/17/2025 */
 
 /*media query: makes the grid template only one column for mobile screens (600px)*/
 @media (max-width: 600px) {
@@ -21,17 +21,17 @@
 /*DAY MODE CUSTOM FONTS*/
 @font-face {
     font-family: 'IndieFlower';
-    src: url('Indie_Flower/IndieFlower-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/IndieFlower-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ArchitectsDaughter';
-    src: url('Architects_Daughter/ArchitectsDaughter-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/ArchitectsDaughter-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'MsMadi';
-    src: url('Ms_Madi/MsMadi-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/MsMadi-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -52,12 +52,12 @@
 /*NIGHT MODE CUSTOM FONTS*/
 @font-face {
     font-family: 'Michroma';
-    src: url('Michroma/Michroma-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/Michroma-Regular.ttf') format('truetype');
 }
 
 @font-face{
     font-family: 'Audiowide'; /*BACKUP FONTS*/
-    src: url('Audiowide-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/Audiowide-Regular.ttf') format('truetype');
 }
 
 /*CSS on Elements*/
