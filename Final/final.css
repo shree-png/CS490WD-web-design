@@ -221,6 +221,15 @@ button {
     display: block;
 }
 
+/*I picked 1200px because that's when the resume viewer starts to cut off.
+Changed to 100% width so no cutoff happens / the whole resume shows after
+this cutoff point.*/
+@media (max-width: 1200px) {
+    .resume-viewer {
+        width: 100%;
+    }
+}
+
 /* Hover pseudoclasses for links (projects and my email)
     and buttons (night mode toggle + scroll to top) */
 .cards li a:hover {color: #FF2CCB;}
