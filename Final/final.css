@@ -134,22 +134,28 @@ nav {padding: 20px;}
     font-size: 18px;
 }
 
-/*specific to the about me/bio/home page*/
-/*I had to move this media query down here since it wasn't working at the top due to the normal 
-.box class being below and thus taking precedence*/
-/*for small screens, since my picture is relatively small*/
-@media (max-width: 400px) {
-    .box {
-        width: 185px; /*Box set as the same size as my picture*/
-        text-align: center;
-    }
-}
-
 .pic {
     float: left; /*to make the text wrap around the image; I looked this up*/
     width: 185px;
     height: auto;
     margin-right: 15px;
+}
+
+/*specific to the about me/bio/home page*/
+/*I had to move this media query down here since it wasn't working at the top due to the normal 
+.box and .pic class being below and thus taking precedence*/
+/*I picked this width because this is when text-wrapping around my picture became awkward.*/
+@media (max-width: 530px) {
+    .box {
+        width: 300px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .pic {
+        width: 300px;
+        height: auto;
+    }
 }
 
 .cards li a { /*for programs page*/
