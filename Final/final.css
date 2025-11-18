@@ -15,12 +15,6 @@
     .container {text-align: center;}
 
     footer {text-align: center;}
-
-    /*specific to the about me/bio/home page*/
-    .box { 
-        width: 185px; /*Same size as photo*/
-        text-align: center;
-    }
 }
 
 
@@ -138,6 +132,15 @@ nav {padding: 20px;}
     font-family: ArchitectsDaughter, cursive;
     font-weight: normal;
     font-size: 18px;
+}
+
+/*specific to the about me/bio/home page*/
+/*for small screens, since my picture is relatively smaller*/
+@media (max-width: 500px) {
+    .box {
+        width: 185px;
+        text-align: center;
+    }
 }
 
 .pic {
