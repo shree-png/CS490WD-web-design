@@ -140,7 +140,7 @@ nav {padding: 20px;}
 /*for small screens, since my picture is relatively small*/
 @media (max-width: 400px) {
     .box {
-        width: 185px;
+        width: 185px; /*Box set as the same size as my picture*/
         text-align: center;
     }
 }
