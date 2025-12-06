@@ -2,28 +2,37 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <!--Shree Khambekar
-    11/17/2025-->
-    
+    12/5/2025-->
+
 <head>
     <meta charset="utf-8">
     <title>About Me</title>
-    <link rel="stylesheet" href="Final/final.css">
+    <link rel="stylesheet" href="midterm.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="Final/education.html">Education</a></li>
-                <li><a href="Final/resume.html">Resume</a></li>
+                <li><a href="bio.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="home.html">Projects</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
+        <!--I purposefully only put the dynamic greeting on this page,
+            the home page, because it is a bit clunky so I didn't want
+            it on every page. and there wasn't any spot where it looked
+            better-->
+        <p id="greeting"></p> 
     </header>
 
     <h1>About Me</h1>
     <div class="box">
-        <img src="Final/Photos/shree.jpeg" class="pic" alt="Professional photo of Shree Khambekar">
+        <img src="shree.jpeg" class="pic" alt="Professional photo of Shree Khambekar">
         Hi! My name is Shree Khambekar, and I am currently a student at the University of
         Missouri-Kansas City (UMKC). I am a double major in Computer Science and
         Mathematics &amp; Statistics, both Bachelor of Science. Aside from academics,
@@ -38,12 +47,12 @@
         through ABET. Currently, I volunteer as a language partner through UMKC's
         Applied Language Institute (ALI) for students learning English. I am also a
         part of UMKC's Professional Career Escalators (PCE) Scholarship Program which
-        builds members' professional skills for future career success. Lastly, I am 
+        builds members' professional skills for future career success. Lastly, I am
         a Senator for UMKC's School of Science and Engineering (SSE), where
         I advocate for SSE Students in the Student Government. I am proficient in Python,
         C++, HTML, and CSS. I have also worked with JavaScript, MySQL, React, PHP, and
         Machine Learning frameworks. I am a recipient of numerous scholarships for
-        tuition assistance, and have made the Dean's List every year in college due to my 
+        tuition assistance, and have made the Dean's List every year in college due to my
         consistent outstanding academic performance. I am passionate about learning,
         having a presence, and making an impact in my community. I plan to pursue
         computer science careers that have an emphasis on math.
@@ -59,6 +68,15 @@
     </section>
 
     <footer>
+
+        <div class="container">
+            <button id="nightBtn">Toggle Night Mode</button>
+        </div>
+
+        <div class="container2">
+            <button id="scrollTopBtn">Scroll to Top</button>
+        </div><br>
+
         &copy; 2025. All Rights Reserved. <br>
         Background image credit:
         <a href="https://wallpapers-clan.com/desktop-wallpapers/pastel-sky-clouds-gradient/" target="_blank">
@@ -71,5 +89,6 @@
 
     </footer>
 
+    <script src="midterm.js"></script>
 </body>
 </html>
