@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <title>Research</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+    <header>
+        <!--<p id="greeting"></p> <!--FIXME: Change location?-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="home.html">Projects</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="work.html">Work Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>AI Voice Cloning Detection Research</h1>
+    <div class="box">
+        <img src="Photos/research-symposium.jpeg" class="pic2" alt="Shree Khambekar presenting
+             at UMKC's 2024-2025 Undergraduate Research Symposium">
+        From January 2025 to April 2025, I investigated accesible AI methods for
+        detecting deepfake voices under Dr. Rui Duan of UMKC's Computer Science Department.
+        To do so, I evaluated free, effective voice-cloning and detection tools,
+        including a neural speaker
+        embedding system based on the Deep Speaker model (2017) and online deepfake
+        detector tools (e.g., Hive). In order to implement the Deep Speaker—based
+        model, I utilized PyTorch and TensorFlow on Google Colab. I then used the
+        Deep Speaker—based model to compare real and synthetic voice samples from
+        the same speaker to see how well it could detect lack of similarity between
+        the two (i.e., how well it could tell the two apart). I then utilized the
+        online deepfake detector tools to evaluate their effectiveness. While the
+        Deep Speaker—based model was effective as it only detected similarity scores
+        of up to 50%, the online deepfake detector tools detected AI-Generated voices
+        with almost 100% accuracy. I had the honor of presenting these findings and
+        my research as a whole at UMKC's 2024—2025 Undergraduate Research Symposium.
+    </div>
+
+    <section class="contact">
+        <h1>Contact</h1>
+        <p>
+            Questions? Contact me! :) <br>
+            Email: <a href="mailto:sk4gn@umkc.edu">sk4gn@umkc.edu</a>
+        </p>
+        <br><br>
+    </section>
+
+    <footer>
+
+        <div class="container">
+            <button id="nightBtn">Toggle Night Mode</button>
+        </div>
+
+        <div class="container2">
+            <button id="scrollTopBtn">Scroll to Top</button>
+        </div><br>
+
+        &copy; 2025. All Rights Reserved. <br>
+        Background image credit:
+        <a href="https://wallpapers-clan.com/desktop-wallpapers/pastel-sky-clouds-gradient/" target="_blank">
+            https://wallpapers-clan.com/desktop-wallpapers/pastel-sky-clouds-gradient/
+        </a>
+        <br>
+        and <a href="https://wallpapertag.com/night-sky-stars-wallpaper" target="_blank">
+            https://wallpapertag.com/night-sky-stars-wallpaper
+        </a>
+
+    </footer>
+
+    <script src="final.js"></script>
+</body>
+</html>
