@@ -1,5 +1,5 @@
 /* Shree Khambekar
-11/17/2025 */
+12/5/2025 */
 
 /*media query: makes the grid template only one column for mobile screens (600px)*/
 @media (max-width: 600px) {
@@ -36,17 +36,17 @@
 
 @font-face {
     font-family: 'Neonderthaw';
-    src: url('Neonderthaw/Neonderthaw-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/Neonderthaw-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'NanumPenScript';
-    src: url('Nanum_Pen_Script/NanumPenScript-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/NanumPenScript-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'OpenSans';
-    src: url('Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+    src: url('Custom_Fonts/static/OpenSans-Regular.ttf') format('truetype');
 }
 
 /*NIGHT MODE CUSTOM FONTS*/
@@ -55,7 +55,7 @@
     src: url('Custom_Fonts/Michroma-Regular.ttf') format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: 'Audiowide'; /*BACKUP FONTS*/
     src: url('Custom_Fonts/Audiowide-Regular.ttf') format('truetype');
 }
@@ -109,7 +109,7 @@ nav {padding: 20px;}
 }
 
 .cards li {
-    background:#F4E8F2;
+    background: #F4E8F2;
     text-align: center;
     border: 2px dashed #4E165F;
     padding: 5px;
@@ -137,6 +137,13 @@ nav {padding: 20px;}
 .pic {
     float: left; /*to make the text wrap around the image; I looked this up*/
     width: 185px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.pic2 {
+    float: left;
+    width: 300px;
     height: auto;
     margin-right: 15px;
 }
@@ -256,11 +263,13 @@ body.dark {
     background-position: center;
 }
 
-body.dark header {
-    color: #F7D9FF;
+body.dark header .navbar ul { /*FIXME*/
+    background-color: #F7D9FF;
     font-family: Michroma, 'Times New Roman';
     font-size: 20px;
 }
+
+body.dark header .navbar ul li a {color: #612CE1;}
 
 body.dark h1 {
     color: #CC6CE7;
@@ -268,13 +277,19 @@ body.dark h1 {
     font-size: 38px;
 }
 
-body.dark .cards li { /*looked this syntax up so the button would toggle all elements
+body.dark .cards li { 
+    /*looked this syntax up so the button would toggle all elements
 and I wouldnt have to toggle them all separately.*/
     background-color: #612CE1;
     border: 2px solid white;
 }
 
-body.dark .cards li a {
+body.dark .cards li a { /*for the project section headers*/
+    color: white;
+    font-family: Audiowide, 'Times New Roman';
+}
+
+body.dark .cards li h3 { /*for the education section headers*/
     color: white;
     font-family: Audiowide, 'Times New Roman';
 }
@@ -284,6 +299,17 @@ body.dark .cards li p {
     font-family: Michroma, 'Times New Roman';
     font-size: 14px;
 }
+
+body.dark .box {
+    background-color: #612CE1;
+    border: 2px solid white;
+    color: white;
+    font-family: Michroma, 'Times New Roman';
+    font-size: 16px;
+}
+
+body.dark .eddescript {color: white;}
+
 
 /* For some reason, just body.dark .contact alone didn't work. Hence why I defined 
  each .contact element separately, despite them all being the same color. */
@@ -299,7 +325,7 @@ body.dark .contact p a {color: #F7D9FF;}
 
 body.dark footer {color: #CC6CE7;}
 
-/* Hover pseudoclasses for links (projects and my email)
+    /* Hover pseudoclasses for links (projects and my email)
     and buttons (night mode toggle + scroll to top) */
 body.dark .cards li a:hover {color: black;}
 
